@@ -22,17 +22,6 @@ const validateOperator = (value) => {
   }
   return true;
 };
-const validateContinue = (value) => {
-  if (value === 'No' || value === 'N' || value === 'no' || value === 'n')
-    return false;
-  else {
-    if (value === 'Yes' || value === 'Y' || value === 'yes' || value === 'y')
-      return true;
-    else {
-      return null;
-    }
-  }
-};
 const getResult = (first, second, operator) => {
   if (operator === '+') {
     return first + second;
